@@ -1,0 +1,10 @@
+a17894,127.0.0.1,GET,http://cupon.local/app_dev.php.,1401220209,1a5868
+1a5868,127.0.0.1,GET,http://cupon.local/app_dev.php.,1401220209,
+bcb68d,127.0.0.1,GET,http://cupon.local/app_dev.php/,1401220212,
+cbf9d3,127.0.0.1,GET,http://cupon.local/app_dev.php/_configurator/,1401231499,
+e4e50d,127.0.0.1,GET,http://cupon.local/app_dev.php/_configurator/step/0,1401231503,
+87b593,127.0.0.1,POST,http://cupon.local/app_dev.php/_configurator/step/0,1401231517,
+5ebd5c,127.0.0.1,GET,http://cupon.local/app_dev.php/_configurator/step/1,1401231522,
+0b7d9d,127.0.0.1,POST,http://cupon.local/app_dev.php/_configurator/step/1,1401231526,
+99e7be,127.0.0.1,GET,http://cupon.local/app_dev.php/_configurator/final,1401231529,
+0a1def,127.0.0.1,GET,http://cupon.local/app_dev.php/,1401231539,
