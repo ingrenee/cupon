@@ -135,6 +135,39 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        // pagina_ayuda
+        if ($pathinfo === '/ayuda') {
+            return array (  '_controller' => 'Cupon\\OfertaBundle\\Controller\\DefaultController::ayudaAction',  '_route' => 'pagina_ayuda',);
+        }
+
+        // pagina_estatica
+        if (0 === strpos($pathinfo, '/pagina') && preg_match('#^/pagina/(?P<pagina>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'pagina_estatica')), array (  '_controller' => 'OfertaBundle:Sitio:estatica',));
+        }
+
+        if (0 === strpos($pathinfo, '/hello')) {
+            // usuario_homepage
+            if (preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'usuario_homepage')), array (  '_controller' => 'Cupon\\UsuarioBundle\\Controller\\DefaultController::indexAction',));
+            }
+
+            // tienda_homepage
+            if (preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'tienda_homepage')), array (  '_controller' => 'Cupon\\TiendaBundle\\Controller\\DefaultController::indexAction',));
+            }
+
+            // ciudad_homepage
+            if (preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'ciudad_homepage')), array (  '_controller' => 'Cupon\\CiudadBundle\\Controller\\DefaultController::indexAction',));
+            }
+
+            // oferta_homepage
+            if (preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'oferta_homepage')), array (  '_controller' => 'Cupon\\OfertaBundle\\Controller\\DefaultController::indexAction',));
+            }
+
+        }
+
         // _welcome
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {
