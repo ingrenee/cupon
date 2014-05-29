@@ -2,4 +2,4 @@ _assetic:
     resource: .
     type: assetic
 _app:
-    resource: 'F:/renee/proyectos/cupon/app/config/routing_dev.yml'
+    resource: 'D:/renee/proyectos/cupon/app/config/routing_dev.yml'

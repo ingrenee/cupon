@@ -142,7 +142,7 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         // pagina_estatica
         if (0 === strpos($pathinfo, '/pagina') && preg_match('#^/pagina/(?P<pagina>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'pagina_estatica')), array (  '_controller' => 'OfertaBundle:Sitio:estatica',));
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'pagina_estatica')), array (  '_controller' => 'Cupon\\OfertaBundle\\Controller\\SitioController::estaticaAction',));
         }
 
         if (0 === strpos($pathinfo, '/hello')) {
