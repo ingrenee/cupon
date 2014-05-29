@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 a17894,127.0.0.1,GET,http://cupon.local/app_dev.php.,1401220209,1a5868
 1a5868,127.0.0.1,GET,http://cupon.local/app_dev.php.,1401220209,
 bcb68d,127.0.0.1,GET,http://cupon.local/app_dev.php/,1401220212,
@@ -9,3 +10,19 @@ e4e50d,127.0.0.1,GET,http://cupon.local/app_dev.php/_configurator/step/0,1401231
 99e7be,127.0.0.1,GET,http://cupon.local/app_dev.php/_configurator/final,1401231529,
 0a1def,127.0.0.1,GET,http://cupon.local/app_dev.php/,1401231539,
 3b6a9a,127.0.0.1,GET,http://cupon.local/app_dev.php/,1401385448,
+=======
+214176,127.0.0.1,GET,http://cupon.local/app_dev.php/ayuda,1401253305,
+19d4e3,127.0.0.1,GET,http://cupon.local/app_dev.php/ayuda,1401253309,
+d5623a,127.0.0.1,GET,http://cupon.local/app_dev.php/ayuda,1401253418,18e44a
+18e44a,127.0.0.1,GET,http://cupon.local/app_dev.php/ayuda,1401253418,
+fb3762,127.0.0.1,GET,http://cupon.local/app_dev.php/ayuda,1401253589,
+d6abc5,127.0.0.1,GET,http://cupon.local/app_dev.php/pagina/ayuda,1401253876,04dcbc
+04dcbc,127.0.0.1,GET,http://cupon.local/app_dev.php/pagina/ayuda,1401253876,
+d993da,127.0.0.1,GET,http://cupon.local/app_dev.php/pagina/ayuda,1401253945,
+d5a35b,127.0.0.1,GET,http://cupon.local/app_dev.php/pagina/ayuda2,1401253951,83a4ff
+83a4ff,127.0.0.1,GET,http://cupon.local/app_dev.php/pagina/ayuda2,1401253951,
+cc78dd,127.0.0.1,GET,http://cupon.local/app_dev.php/pagina/ayuda,1401253954,
+999fbd,127.0.0.1,GET,http://cupon.local/app_dev.php/pagina/ayuda,1401254000,7d76cb
+7d76cb,127.0.0.1,GET,http://cupon.local/app_dev.php/pagina/ayuda,1401254000,
+2e583c,127.0.0.1,GET,http://cupon.local/app_dev.php/pagina/ayuda,1401254022,
+>>>>>>> 740b1c1af0016d8c642419bf5f2d33163c504bb1
