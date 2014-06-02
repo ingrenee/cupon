@@ -1,0 +1,45 @@
+Cupon\OfertaBundle\Entity\Oferta:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: 255
+        slug:
+            type: string
+            length: 255
+        descripcion:
+            type: text
+        rutaFoto:
+            type: string
+            length: 255
+            column: ruta_foto
+        precio:
+            type: decimal
+        descuento:
+            type: decimal
+        fechaPublicacion:
+            type: datetime
+            column: fecha_publicacion
+        fechaExpiracion:
+            type: datetime
+            column: fecha_expiracion
+        compras:
+            type: integer
+        umbral:
+            type: integer
+        revisada:
+            type: boolean
+        ciudad:
+            type: string
+            length: 255
+        tienda:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
