@@ -1,6 +1,6 @@
 <?php
 
- 
+  
 namespace Cupon\CiudadBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
