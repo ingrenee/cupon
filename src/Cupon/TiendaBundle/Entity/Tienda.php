@@ -4,7 +4,10 @@ namespace Cupon\TiendaBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
-/** @ORM\Entity */
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="ProyectoCupon_Tienda")
+ */
 class Tienda {
 
     /**
