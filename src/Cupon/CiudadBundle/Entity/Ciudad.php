@@ -1,41 +1,31 @@
 <?php
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- * Description of Ciudad
- *
- * @author rmorales
- */
-
+ 
 namespace Cupon\CiudadBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity
- * * @ORM\Table(name="ProyectoCupon_Ciudad")
+ * @ORM\Table(name="ProyectoCupon_Ciudad")
  */
 class Ciudad {
 
-    //put your code here
+    
     /**
      * @ORM\Id
      * @ORM\Column (type="integer")
-     * @ORM\GenerateValue
+     * @ORM\GeneratedValue
      */
     protected $id;
 
     /**
-     * @ORM\Column (type="string",length:150)
+     * @ORM\Column (type="string",length=150)
      */
     protected $nombre;
 
     /**
-     * @ORM\Column (type="string",length:100)
+     * @ORM\Column (type="string",length=100)
      */
     protected $slug;
 
