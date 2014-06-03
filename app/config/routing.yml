@@ -1,4 +1,5 @@
 
+      
 pagina_ayuda:
     path:   /ayuda
     defaults: {_controller:OfertaBundle:Default:ayuda}
@@ -9,6 +10,11 @@ pagina_estatica:
 usuario:
     resource: "@UsuarioBundle/Resources/config/routing.yml"
     prefix:   /
+    
+usuario_login:
+      resource: "@UsuarioBundle/Resources/config/routing.yml"
+      prefix: /usuario    
+    
 home:
     path:   /
     defaults:   {_controller:OfertaBundle:Default:index}

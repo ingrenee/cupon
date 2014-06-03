@@ -10,64 +10,43 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Oferta {
 
-    /**
-     * @var integer
+   /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue
      */
     private $id;
 
-    /**
-     * @var string
-     */
+    /** @ORM\Column(type="string", length=100) */
     private $nombre;
-
-    /**
-     * @var string
-     */
+   /** @ORM\Column(type="string", length=100) */
     private $slug;
 
-    /**
-     * @var string
-     */
+  /** @ORM\Column(type="string", length=100) */
     private $descripcion;
 
-    /**
-     * @var string
-     */
+ /** @ORM\Column(type="string", length=100) */
     private $rutaFoto;
 
-    /**
-     * @var string
-     */
+/** @ORM\Column(type="decimal") */
     private $precio;
 
-    /**
-     * @var string
-     */
+/** @ORM\Column(type="decimal") */
     private $descuento;
 
-    /**
-     * @var \DateTime
-     */
+  /** @ORM\Column(type="string", length=100) */
     private $fechaPublicacion;
 
-    /**
-     * @var \DateTime
-     */
+/** @ORM\Column(type="string", length=100) */
     private $fechaExpiracion;
 
-    /**
-     * @var integer
-     */
+/** @ORM\Column(type="integer") */
     private $compras;
 
-    /**
-     * @var integer
-     */
+/** @ORM\Column(type="integer") */
     private $umbral;
 
-    /**
-     * @var boolean
-     */
+/** @ORM\Column(type="boolean") */
     private $revisada;
 
     /** @ORM\ManyToOne(targetEntity="Cupon\CiudadBundle\Entity\Ciudad") */

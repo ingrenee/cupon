@@ -2,16 +2,19 @@
 
 namespace Cupon\UsuarioBundle\Entity;
 
+use Symfony\Component\Security\Core\User\UserInterface;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity
  * @ORM\Table(name="ProyectoCupon_Usuario")
  */
-class Usuario {
+class Usuario implements UserInterface {
 
     /**
-     * @var integer
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue
      */
     private $id;
 
@@ -340,6 +343,18 @@ class Usuario {
 
     public function __construct() {
         $this->fecha_alta = new \DateTime();
+    }
+
+    function eraseCredentials() {
+        
+    }
+
+    function getRoles() {
+        return array('ROLE_USUARIO');
+    }
+
+    function getUsername() {
+        return $this->getEmail();
     }
 
 }

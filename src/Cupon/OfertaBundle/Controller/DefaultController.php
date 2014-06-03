@@ -7,8 +7,13 @@ use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController extends Controller {
 
-    public function indexAction($name) {
-        return $this->render('OfertaBundle:Default:index.html.twig', array('name' => $name));
+    public function indexAction() {
+        
+        $em=$this->getDoctrine()->getManager();
+       $oferta= $em->find("OfertaBundle:Oferta", 1);
+       $precio=$oferta->getPrecio();
+       
+        return $this->render('OfertaBundle:Default:index.html.twig', array('name' => $precio));
     }
 
     public function ayudaAction() {
